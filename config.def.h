@@ -35,9 +35,11 @@ static const Rule rules[] = {
 	 *	WM_CLASS(STRING) = instance, class
 	 *	WM_NAME(STRING) = title
 	 */
+// tags mask formula  == 1 << (n-1) n-теги в котором я хочу запускать приложение
 	/* class      instance    title       tags mask     isfloating   monitor */
-	{ "Gimp",     NULL,       NULL,       0,            1,           -1 },
-	{ "Firefox",  NULL,       NULL,       1 << 2,       0,           -1 },
+    { "Gimp",             NULL,       NULL,       0,            1,           -1 },
+	{ "firefox",          NULL,       NULL,       1 << 1,       0,           -1 },
+	{ "TelegramDesktop",  NULL,       NULL,       1 << 3,       0,           -1 },
 };
 
 /* layout(s) */
